@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-xxl navbar__container">
+            <a class="navbar__logo col-auto" href="/">
+                <img src="img/resoschool_logo_green.svg" alt="">
+            </a>
+            <button class="navbar-toggler navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+            </button>
+            <div class="navbar__collapse collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar__links navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar__item" href="/about/">О школе</a>
+                    <a class="navbar__item" href="/team/">Команда</a>
+                    <a class="navbar__item active" href="/shedule/">Расписание</a>
+                    <a class="navbar__item" href="/contacts/">Контакты</a>
+                </div>
+                <a class="navbar__phone col-auto me-auto" href="tel:78124496110">+7 (812) 449-61-10</a>
+                <form class="navbar__search d-flex" action="/search/">
+                    <input type="text" name="q" placeholder="Поиск по сайту" class="col">
+                    <button type="submit" class="col-auto">
+                        <img src="img/loopa.svg" alt="Поиск по сайту">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main" id="main">
+        <!-- Меню -->
+        <menu class="menu container-xl" id="menu">
+            <div class="menu__padding"></div>
+            <div class="menu__limiter dragscroll">
+                <div class="menu__row">
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="first">Экспресс-курс</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2 active">
+                        <button class="menu__button" id="second">Действующему агенту</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="third">Руководителю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fourth">Обучателю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">УМК</a>
+                            <a href="#">Менеджеры</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fivth">Материалы</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Документы от клиента для оформления полиса</a>
+                            <a href="#">ОСАГО</a>
+                            <a href="#">Имущество ФЛ</a>
+                            <a href="#">Личная защита</a>
+                            <a href="#">Медицина</a>
+                            <a href="#">Юр.лица</a>
+                            <a href="#">Туристы</a>
+                            <a href="#">Методички</a>
+                            <a href="#">Книги</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="sixth">СПЕКТР</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+
+        <!-- Базовый курс -->
+        <section class="agent container-xl" id="agent">
+            <h1 class="agent__title title">
+                Базовый курс «Экспресс заочный».
+                <span class="agent__subtitle">Порядок обучения</span>
+            </h1>
+            <ul class="default-ul">
+                <li>Курс длится 2 недели.</li>
+                <li>Вы изучаете продукты по видео-урокам по расписанию. Расписание опубликовано ниже.</li>
+                <li>Раз в несколько дней предусмотрено подключение через площадку ZOOM
+                    для возможности задать вопросы по пройденному материалу.</li>
+                <li>Для всех занятий создана единая ссылка для подключения.</li>
+                <li>Находится в закреплённом сообщении в Телеграм-канале.</li>
+                <li>В течение курса предусмотрены домашние задания для подготовки к экзамену.</li>
+                <li>Cдача всех тестов домашних заданий является допуском к экзамену.</li>
+                <li>Тесты домашних заданий находятся в разделе «Тесты».</li>
+                <li>Методические материалы в электронном виде находятся в разделе каждой лекции. Кнопка «Материалы»</li>
+                <li>В течение курса предусмотрено несколько организационных встреч с куратором через площадку ZOOM</li>
+                <li>Все вопросы можно задать в чате группы в Телеграм-канале.</li>
+            </ul>
+            <div class="course-group">
+                <p class="course-group__current">
+                    Текущая группа: 1121Э.
+                </p>
+                <p class="course-group__date">
+                    Обучение с 21.06.2021 по 09.07.2021
+                </p>
+            </div>
+            <div class="course-buttons">
+                <a href="#" class="course-buttons__item">Телеграм-канал</a>
+                <a href="#" class="course-buttons__item">Расписание занятий</a>
+                <a href="#" class="course-buttons__item">Тесты</a>
+                <button href="#" class="course-buttons__item">Содержание курса</button>
+                <div class="course-buttons__dropdown">
+                    <div class="course-buttons__dropdown-col">
+                        <a href="#" class="course-buttons__dropdown-link">Вводная лекция</a>
+                        <a href="#" class="course-buttons__dropdown-link">Страхование от несчастного случая</a>
+
+                        <div class="course-buttons__dropdown-lecture">Автострахование</div>
+                        <a href="#" class="course-buttons__dropdown-link">КАСКО-ПРОФИ</a>
+                        <a href="#" class="course-buttons__dropdown-link">КАСКО. Правила</a>
+                        <a href="#" class="course-buttons__dropdown-link">КАСКО. Риски, стоимость</a>
+                        <a href="#" class="course-buttons__dropdown-link">КАСКО. Оформление</a>
+                        <a href="#" class="course-buttons__dropdown-link">КАСКО. Урегулирование</a>
+                        <a href="#" class="course-buttons__dropdown-link">РЕСОавто помощь</a>
+                        <a href="#" class="course-buttons__dropdown-link">ОСАГО</a>
+                    </div>
+                    <div class="course-buttons__dropdown-col">
+                        <div class="course-buttons__dropdown-lecture">Страхование имущества физических лиц</div>
+                        <a href="#" class="course-buttons__dropdown-link">Правила</a>
+                        <a href="#" class="course-buttons__dropdown-link">РЕСО-Домовой</a>
+                        <a href="#" class="course-buttons__dropdown-link">РЕСО-Дом</a>
+
+                        <div class="course-buttons__dropdown-lecture">Медицинское страхование</div>
+                        <a href="#" class="course-buttons__dropdown-link">Доктор-РЕСО</a>
+                        <a href="#" class="course-buttons__dropdown-link">Здоровье без границ</a>
+                        <a href="#" class="course-buttons__dropdown-link">Телемедицина</a>
+                    </div>
+                    <div class="course-buttons__dropdown-col">
+                        <div class="course-buttons__dropdown-lecture">Разные темы</div>
+                        <a href="#" class="course-buttons__dropdown-link">Страхование юридических лиц. Обзор</a>
+                        <a href="#" class="course-buttons__dropdown-link">Страхование выезжающих за рубеж</a>
+                        <a href="#" class="course-buttons__dropdown-link">Ипотечное страхование</a>
+                        <a href="#" class="course-buttons__dropdown-link">Практическое занятие. Спектр</a>
+                        <a href="#" class="course-buttons__dropdown-link">Практическое занятие. Поиск клиентов, ч. 1</a>
+                        <a href="#" class="course-buttons__dropdown-link">Практическое занятие. Поиск клиентов, ч. 2</a>
+                        <a href="#" class="course-buttons__dropdown-link">Работа в СДО</a>
+                        <a href="#" class="course-buttons__dropdown-link">Предстраховой осмотр</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="agent__title title">Записи лекций базового курса «Экспресс»</h2>
+            <div class="lectures">
+                <h3 class="lectures__title">Вводная лекция</h3>
+                <div class="lectures__wrapper">
+                    <div class="lectures__speaker">
+                        <img src="img/lectures_speaker.jpg" alt="Михаил Ларионов" class="lectures__speaker-img">
+                        <p class="lectures__speaker-name">
+                            Михаил Ларионов,
+                            <span class="lectures__speaker-position">
+                                директор Школы РЕСО
+                            </span>
+                        </p>
+                        <a href="#" class="lectures__speaker-btn btn-materials">Материалы</a>
+                        <a href="#" class="lectures__speaker-btn btn-test">Тест</a>
+                    </div>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция. Термины</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lectures">
+                <h3 class="lectures__title">Вводная лекция</h3>
+                <div class="lectures__wrapper">
+                    <div class="lectures__speaker">
+                        <img src="img/lectures_speaker.jpg" alt="Михаил Ларионов" class="lectures__speaker-img">
+                        <p class="lectures__speaker-name">
+                            Михаил Ларионов,
+                            <span class="lectures__speaker-position">
+                                директор Школы РЕСО
+                            </span>
+                        </p>
+                        <a href="#" class="lectures__speaker-btn btn-materials">Материалы</a>
+                        <a href="#" class="lectures__speaker-btn btn-test">Тест</a>
+                    </div>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция. Термины</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция. Термины</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция. Термины</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lectures">
+                <h3 class="lectures__title">Вводная лекция</h3>
+                <div class="lectures__wrapper">
+                    <div class="lectures__speaker">
+                        <img src="img/lectures_speaker.jpg" alt="Михаил Ларионов" class="lectures__speaker-img">
+                        <p class="lectures__speaker-name">
+                            Михаил Ларионов,
+                            <span class="lectures__speaker-position">
+                                директор Школы РЕСО
+                            </span>
+                        </p>
+                        <a href="#" class="lectures__speaker-btn btn-materials">Материалы</a>
+                    </div>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lectures">
+                <h3 class="lectures__title">Вводная лекция</h3>
+                <div class="lectures__wrapper">
+                    <div class="lectures__speaker">
+                        <img src="img/lectures_speaker.jpg" alt="Михаил Ларионов" class="lectures__speaker-img">
+                        <p class="lectures__speaker-name">
+                            Михаил Ларионов,
+                            <span class="lectures__speaker-position">
+                                директор Школы РЕСО
+                            </span>
+                        </p>
+                        <a href="#" class="lectures__speaker-btn btn-materials">Материалы</a>
+                        <a href="#" class="lectures__speaker-btn btn-link">webtutor.reso.ru</a>
+                    </div>
+                    <a href="#" class="lectures__link">
+                        <div class="lectures__img">
+                            <img src="img/lectures_img.jpg" alt="Вводная лекция">
+                        </div>
+                        <div class="lectures__info">
+                            <h4 class="lectures__name">Вводная лекция</h4>
+                            <p class="lectures__about">
+                                Михаил Ларионов,<br>
+                                директор Школы РЕСО
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer container-fluid" id="footer">
+        <div class="container-xl">
+            <div class="footer__row row">
+                <div class="col-12 col-xl-5 d-flex flex-column flex-md-row flex-xl-column align-items-start justify-content-between">
+                    <a href="index.html" class="footer__name d-flex">
+                        <img src="img/resoschool_logo_white.svg" alt="Логотип белый">
+                        <p>Центр<br>
+                            профессиональной подготовки<br>
+                            САО «РЕСО-Гарантия»,<br>
+                            Санкт-Петербург
+                        </p>
+                    </a>
+                    <div class="footer__tagline">
+                        Лучшая школа<br>
+                        страхования в России!
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">О школе</a>
+                        <a class="footer__link" href="#">Команда</a>
+                        <a class="footer__link active" href="#">Расписание</a>
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">Экспресс-курс"</a>
+                        <a class="footer__link" href="#">Действующему агенту</a>
+                        <a class="footer__link" href="#">Руководителю</a>
+                        <a class="footer__link" href="#">Обучателю</a>
+                        <a class="footer__link" href="#">Материалы</a>
+                        <a class="footer__link" href="#">СПЕКТР</a>
+                    </div>
+                </div>
+                <div class="footer__contacts col-12 col-xl-4 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__address">
+                        195220, Санкт-Петебург,  пр. Непокоренных, д. 49А<br>
+                        Телефон: <a href="tel:78124496110">+7 (812) 449-61-10</a><br>
+                        E-mail: <a href="mailto:study@spb.reso.ru">study@spb.reso.ru</a>
+                    </div>
+                    <div class="footer__additional">
+                        <div class="footer__messangers">
+                            <a href="https://instagram.com/resodrive?utm_medium=site" class="footer__messanger">
+                                <img src="img/INST.svg" alt="Инстаграм">
+                            </a>
+                            <a href="https://www.facebook.com/groups/prazdnik.reso/?ref=share" class="footer__messanger">
+                                <img src="img/FB.svg" alt="Фейсбук">
+                            </a>
+                            <a href="https://vk.com/we_are_reso" class="footer__messanger">
+                                <img src="img/VK.svg" alt="ВКонтакте">
+                            </a>
+                            <a href="mailto:study@spb.reso.ru" class="footer__messanger">
+                                <img src="img/mail.svg" alt="Почта">
+                            </a>
+                        </div>
+                        <div class="footer__divider"></div>
+                        <div class="footer__copyright">
+                            © Школа РЕСО в Санкт-Петербурге, 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/zaochno.js"></script>
+</body>
+</html>

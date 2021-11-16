@@ -12,23 +12,25 @@
 <body>
     <!-- Шапка -->
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-        <div class="container-xxl">
-            <a class="navbar__logo col-auto" href="index.html">
-                <img src="img/resoschool_logo_green.svg" alt="Логотип зеленный">
+        <div class="container-xxl navbar__container">
+            <a class="navbar__logo col-auto" href="/">
+                <img src="img/resoschool_logo_green.svg" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
             </button>
             <div class="navbar__collapse collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar__links navbar-nav me-auto mb-2 mb-lg-0">
-                    <a class="navbar__item" href="#">О школе</a>
-                    <a class="navbar__item" href="#">Команда</a>
-                    <a class="navbar__item active" href="#">Расписание</a>
-                    <a class="navbar__item" href="#">Контакты</a>
+                    <a class="navbar__item" href="/about/">О школе</a>
+                    <a class="navbar__item" href="/team/">Команда</a>
+                    <a class="navbar__item active" href="/shedule/">Расписание</a>
+                    <a class="navbar__item" href="/contacts/">Контакты</a>
                 </div>
                 <a class="navbar__phone col-auto me-auto" href="tel:78124496110">+7 (812) 449-61-10</a>
-                <form class="navbar__search d-flex">
-                    <input type="text" placeholder="Поиск по сайту" class="col">
+                <form class="navbar__search d-flex" action="/search/">
+                    <input type="text" name="q" placeholder="Поиск по сайту" class="col">
                     <button type="submit" class="col-auto">
                         <img src="img/loopa.svg" alt="Поиск по сайту">
                     </button>
@@ -112,7 +114,9 @@
             </p>
             <div class="agent__items">
                 <div class="agent__item">
-                    <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    <div class="agent__img-wrapper">
+                        <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    </div>
                     <div class="agent__footer">
                         <h2 class="agent__name">
                             Курсы и тренинги
@@ -157,7 +161,9 @@
                     </div>
                 </div>
                 <div class="agent__item">
-                    <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    <div class="agent__img-wrapper">
+                        <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    </div>
                     <div class="agent__footer">
                         <h2 class="agent__name">
                             Вебинары
@@ -180,7 +186,9 @@
                     </div>
                 </div>
                 <div class="agent__item">
-                    <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    <div class="agent__img-wrapper">
+                        <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    </div>
                     <div class="agent__footer">
                         <h2 class="agent__name">
                             ЕИС
