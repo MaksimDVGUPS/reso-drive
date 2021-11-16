@@ -1,0 +1,124 @@
+@import '_template.scss';
+
+.vebinar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    & + & {
+        padding-top: 0;
+    }
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            color: $main-color;
+            display: block;
+            font-size: 1.1rem;
+            margin-right: 30px;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__title span {
+        font-weight: bold;
+    }
+
+    &__date {
+        color: #708687;
+        font-size: 1.2rem;
+    }
+
+    &__master {
+        color: #708687;
+        font-size: 1.8rem;
+        line-height: 115%;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__video {
+        margin: 50px 0;
+        max-width: 640px;
+
+        a > img {
+            object-fit: cover;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        a, iframe {
+            padding: 5px;
+            display: block;
+            position: relative;
+        }
+
+        a:after {
+            width: 64px;
+            height: 64px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -32px;
+            margin-top: -32px;
+            background: url(../img/player_play.png) no-repeat;
+            content: '';
+            opacity: 0.8;
+       }
+    }
+
+    &__text {
+        color: #708687;
+        font-size: 1.2rem;
+        line-height: 132%;
+    }
+
+    &__h2 {
+        color: $main-color;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 115%;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    &__ul {
+        padding: 0;
+
+        li {
+            color: #708687;
+            font-size: 1.56rem;
+            line-height: 132%;
+            margin-left: 15px;
+            position: relative;
+
+            &::before {
+                background: #708687;
+                border-radius: 50%;
+                content: '';
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: 15px;
+                left: -15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .vebinar {
+        &__button {
+            margin: 30px auto;
+            width: 270px;
+        }
+    }
+}

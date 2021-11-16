@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-xxl">
+            <a class="navbar__logo col-auto" href="index.html">
+                <img src="img/resoschool_logo_green.svg" alt="Логотип зеленный">
+            </a>
+            <button class="navbar-toggler navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+                <div class="navbar__line"></div>
+            </button>
+            <div class="navbar__collapse collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar__links navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar__item" href="#">О школе</a>
+                    <a class="navbar__item" href="#">Команда</a>
+                    <a class="navbar__item active" href="#">Расписание</a>
+                    <a class="navbar__item" href="#">Контакты</a>
+                </div>
+                <a class="navbar__phone col-auto me-auto" href="tel:78124496110">+7 (812) 449-61-10</a>
+                <form class="navbar__search d-flex">
+                    <input type="text" placeholder="Поиск по сайту" class="col">
+                    <button type="submit" class="col-auto">
+                        <img src="img/loopa.svg" alt="Поиск по сайту">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main" id="main">
+        <!-- Баннер -->
+        <section class="banner container-fluid gx-0" id="banner">
+            <img src="img/banner.jpg" alt="Наша цель - ваше развитие!" class="banner__img">
+            <a href="#" class="banner__link">
+                <p>
+                    Кликай сюда<br>
+                    и смотри<br>
+                    крутые,<br>
+                    командные<br>
+                    <span>флешмобы<br>
+                    РЕСО!</span>
+                </p>
+            </a>
+            <div class="banner__text">Наша цель – ваше развитие!</div>
+        </section>
+
+        <!-- Меню -->
+        <menu class="menu container-xl" id="menu">
+            <div class="menu__limiter dragscroll">
+                <div class="menu__row">
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="first">Экспресс-курс</button>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="second">Действующему агенту</button>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="third">Руководителю</button>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fourth">Обучателю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">УМК</a>
+                            <a href="#">Менеджеры</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fivth">Материалы</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Документы от клиента для оформления полиса</a>
+                            <a href="#">ОСАГО</a>
+                            <a href="#">Имущество ФЛ</a>
+                            <a href="#">Личная защита</a>
+                            <a href="#">Медицина</a>
+                            <a href="#">Юр.лица</a>
+                            <a href="#">Туристы</a>
+                            <a href="#">Методички</a>
+                            <a href="#">Книги</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="sixth">СПЕКТР</button>
+                    </div>
+                </div>
+            </div>
+        </menu>
+
+        <!-- Слайдер -->
+        <section class="slider container-xl">
+            <h1 class="title">Новое на сайте</h1>
+            <ul id="lightSlider">
+                <li class="slider__wrapper">
+                    <img src="img/slider_1.jpg" alt="Слайд 1">
+                    <div class="slider__filter"></div>
+                </li>
+                <li class="slider__wrapper">
+                    <img src="img/slider_2.jpg" alt="Слайд 2">
+                    <div class="slider__filter"></div>
+                </li>
+                <li class="slider__wrapper">
+                    <img src="img/slider_3.jpg" alt="Слайд 3">
+                    <div class="slider__filter"></div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- О компании в цифрах -->
+        <section class="digits container-xl">
+            <div class="row justify-content-around">
+                <div class="digits__item col-md-6 col-lg-6 col-xl-4">
+                    <img src="img/01_novichki.svg" alt="Обучено новичков" id="digit_1">
+                    <div class="digits__number">12 000</div>
+                    <div class="digits__description">Обучено<br>новичков</div>
+                </div>
+                <div class="digits__item col-md-6 col-lg-6 col-xl-4">
+                    <img src="img/02_meropriyatia.svg" alt="Обучено новичков" id="digit_2">
+                    <div class="digits__number">6 270</div>
+                    <div class="digits__description">Проведено<br>мероприятий</div>
+                </div>
+                <div class="digits__item col-md-6 col-lg-6 col-xl-4">
+                    <img src="img/03_sbor.svg" alt="Обучено новичков" id="digit_3">
+                    <div class="digits__number">142 992 660</div>
+                    <div class="digits__description">Сборы новичков<br>за 2020 год</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer container-fluid" id="footer">
+        <div class="container-xl">
+            <div class="footer__row row">
+                <div class="col-12 col-xl-5 d-flex flex-column flex-md-row flex-xl-column align-items-start justify-content-between">
+                    <a href="index.html" class="footer__name d-flex">
+                        <img src="img/resoschool_logo_white.svg" alt="Логотип белый">
+                        <p>Центр<br>
+                            профессиональной подготовки<br>
+                            САО «РЕСО-Гарантия»,<br>
+                            Санкт-Петербург
+                        </p>
+                    </a>
+                    <div class="footer__tagline">
+                        Лучшая школа<br>
+                        страхования в России!
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">О школе</a>
+                        <a class="footer__link" href="#">Команда</a>
+                        <a class="footer__link active" href="#">Расписание</a>
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">Экспресс-курс"</a>
+                        <a class="footer__link" href="#">Действующему агенту</a>
+                        <a class="footer__link" href="#">Руководителю</a>
+                        <a class="footer__link" href="#">Обучателю</a>
+                        <a class="footer__link" href="#">Материалы</a>
+                        <a class="footer__link" href="#">СПЕКТР</a>
+                    </div>
+                </div>
+                <div class="footer__contacts col-12 col-xl-4 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__address">
+                        195220, Санкт-Петебург,  пр. Непокоренных, д. 49А<br>
+                        Телефон: <a href="tel:78124496110">+7 (812) 449-61-10</a><br>
+                        E-mail: <a href="mailto:study@spb.reso.ru">study@spb.reso.ru</a>
+                    </div>
+                    <div class="footer__additional">
+                        <div class="footer__messangers">
+                            <a href="https://instagram.com/resodrive?utm_medium=site" class="footer__messanger">
+                                <img src="img/INST.svg" alt="Инстаграм">
+                            </a>
+                            <a href="https://www.facebook.com/groups/prazdnik.reso/?ref=share" class="footer__messanger">
+                                <img src="img/FB.svg" alt="Фейсбук">
+                            </a>
+                            <a href="https://vk.com/we_are_reso" class="footer__messanger">
+                                <img src="img/VK.svg" alt="ВКонтакте">
+                            </a>
+                            <a href="mailto:study@spb.reso.ru" class="footer__messanger">
+                                <img src="img/mail.svg" alt="Почта">
+                            </a>
+                        </div>
+                        <div class="footer__divider"></div>
+                        <div class="footer__copyright">
+                            © Школа РЕСО в Санкт-Петербурге, 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

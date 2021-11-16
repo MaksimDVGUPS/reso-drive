@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-xxl">
+            <a class="navbar__logo col-auto" href="index.html">
+                <img src="img/resoschool_logo_green.svg" alt="Логотип зеленный">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar__collapse collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar__links navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar__item" href="#">О школе</a>
+                    <a class="navbar__item" href="#">Команда</a>
+                    <a class="navbar__item active" href="#">Расписание</a>
+                    <a class="navbar__item" href="#">Контакты</a>
+                </div>
+                <a class="navbar__phone col-auto me-auto" href="tel:78124496110">+7 (812) 449-61-10</a>
+                <form class="navbar__search d-flex">
+                    <input type="text" placeholder="Поиск по сайту" class="col">
+                    <button type="submit" class="col-auto">
+                        <img src="img/loopa.svg" alt="Поиск по сайту">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main" id="main">
+        <!-- Меню -->
+        <menu class="menu container-xl" id="menu">
+            <div class="menu__padding"></div>
+            <div class="menu__limiter dragscroll">
+                <div class="menu__row">
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="first">Экспресс-курс</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2 active">
+                        <button class="menu__button" id="second">Действующему агенту</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="third">Руководителю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fourth">Обучателю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">УМК</a>
+                            <a href="#">Менеджеры</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fivth">Материалы</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Документы от клиента для оформления полиса</a>
+                            <a href="#">ОСАГО</a>
+                            <a href="#">Имущество ФЛ</a>
+                            <a href="#">Личная защита</a>
+                            <a href="#">Медицина</a>
+                            <a href="#">Юр.лица</a>
+                            <a href="#">Туристы</a>
+                            <a href="#">Методички</a>
+                            <a href="#">Книги</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="sixth">СПЕКТР</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+
+        <article class="course container-xl" id="course">
+            <div class="course__menu">
+                <a href="#" class="course__menu-item active">Курсы и тренинги</a>
+                <a href="#" class="course__menu-item">Вебинары</a>
+                <a href="#" class="course__menu-item">Единные информационные системы</a>
+            </div>
+            <h1 class="course__title title">
+                <span>Введение в профессию.</span> Курс онлайн тренингов
+            </h1>
+            <p class="course__master">
+                <span>Ведущие:</span> Весь тренерский состав. Куратор Елизавета Минина
+            </p>
+            <div class="course__video youtube">
+                <a href='https://www.youtube.com/v/C9Tl8x0sb60?enablejsapi=1&theme=light&showinfo=0&vq=hd720&border=0&autoplay=1' target="_blank" class="course__video-popup popupbox-video fancybox.iframe" rel="group">
+                    <img src="https://img.youtube.com/vi/C9Tl8x0sb60/sddefault.jpg">
+                </a>
+            </div>
+            <p class="course__text">
+                Для агентов новичков и тех, кто хотел бы научиться эффектно презентовать страхование и страховые продукты.
+            </p>
+            <h2 class="course__h2">
+                Цель курса:
+            </h2>
+            <p class="course__text">
+                Встроить в работу короткие навыки по использованию технологии СПЕКТР, профессиональной презентации агента и компании, коробочных страховых продуктов.
+            </p>
+            <h2 class="course__h2">
+                По окончанию курса вы получите:
+            </h2>
+            <ul class="course__ul">
+                <li>
+                    навык выхода на разговор, презентации СПЕКТРА;
+                </li>
+                <li>
+                    умение профессионально презентовать себя как агента, компанию, страховые продукты с использованием визуального материала (переговорных листов);
+                </li>
+                <li>
+                    навык работы в системе (РЕСО Офис);
+                </li>
+                <li>
+                    сертификат о прохождении курса.
+                </li>
+            </ul>
+            <button class="course__button">Записаться</button>
+        </article>
+
+        <!-- Модальное окно с формой -->
+        <div class="modal-window" id="modal">
+            <div class="modal-window__overflow"></div>
+            <form class="modal-window__form">
+                <img src="img/close.svg" alt="Закрыть" class="modal-window__close">
+                <h2 class="modal-window__title">Заполните форму</h2>
+                <div class="modal-window__input">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="modal-window__input">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <button class="modal-window__submit">Записаться</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer container-fluid" id="footer">
+        <div class="container-xl">
+            <div class="footer__row row">
+                <div class="col-12 col-xl-5 d-flex flex-column flex-md-row flex-xl-column align-items-start justify-content-between">
+                    <a href="index.html" class="footer__name d-flex">
+                        <img src="img/resoschool_logo_white.svg" alt="Логотип белый">
+                        <p>Центр<br>
+                            профессиональной подготовки<br>
+                            САО «РЕСО-Гарантия»,<br>
+                            Санкт-Петербург
+                        </p>
+                    </a>
+                    <div class="footer__tagline">
+                        Лучшая школа<br>
+                        страхования в России!
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">О школе</a>
+                        <a class="footer__link" href="#">Команда</a>
+                        <a class="footer__link active" href="#">Расписание</a>
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">Экспресс-курс"</a>
+                        <a class="footer__link" href="#">Действующему агенту</a>
+                        <a class="footer__link" href="#">Руководителю</a>
+                        <a class="footer__link" href="#">Обучателю</a>
+                        <a class="footer__link" href="#">Материалы</a>
+                        <a class="footer__link" href="#">СПЕКТР</a>
+                    </div>
+                </div>
+                <div class="footer__contacts col-12 col-xl-4 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__address">
+                        195220, Санкт-Петебург,  пр. Непокоренных, д. 49А<br>
+                        Телефон: <a href="tel:78124496110">+7 (812) 449-61-10</a><br>
+                        E-mail: <a href="mailto:study@spb.reso.ru">study@spb.reso.ru</a>
+                    </div>
+                    <div class="footer__additional">
+                        <div class="footer__messangers">
+                            <a href="https://instagram.com/resodrive?utm_medium=site" class="footer__messanger">
+                                <img src="img/INST.svg" alt="Инстаграм">
+                            </a>
+                            <a href="https://www.facebook.com/groups/prazdnik.reso/?ref=share" class="footer__messanger">
+                                <img src="img/FB.svg" alt="Фейсбук">
+                            </a>
+                            <a href="https://vk.com/we_are_reso" class="footer__messanger">
+                                <img src="img/VK.svg" alt="ВКонтакте">
+                            </a>
+                            <a href="mailto:study@spb.reso.ru" class="footer__messanger">
+                                <img src="img/mail.svg" alt="Почта">
+                            </a>
+                        </div>
+                        <div class="footer__divider"></div>
+                        <div class="footer__copyright">
+                            © Школа РЕСО в Санкт-Петербурге, 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+    <script src="js/course.js"></script>
+</body>
+</html>

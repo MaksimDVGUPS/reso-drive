@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-xxl">
+            <a class="navbar__logo col-auto" href="index.html">
+                <img src="img/resoschool_logo_green.svg" alt="Логотип зеленный">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar__collapse collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar__links navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar__item" href="#">О школе</a>
+                    <a class="navbar__item" href="#">Команда</a>
+                    <a class="navbar__item active" href="#">Расписание</a>
+                    <a class="navbar__item" href="#">Контакты</a>
+                </div>
+                <a class="navbar__phone col-auto me-auto" href="tel:78124496110">+7 (812) 449-61-10</a>
+                <form class="navbar__search d-flex">
+                    <input type="text" placeholder="Поиск по сайту" class="col">
+                    <button type="submit" class="col-auto">
+                        <img src="img/loopa.svg" alt="Поиск по сайту">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main" id="main">
+        <!-- Меню -->
+        <menu class="menu container-xl" id="menu">
+            <div class="menu__padding"></div>
+            <div class="menu__limiter dragscroll">
+                <div class="menu__row">
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="first">Экспресс-курс</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2 active">
+                        <button class="menu__button" id="second">Действующему агенту</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="third">Руководителю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fourth">Обучателю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">УМК</a>
+                            <a href="#">Менеджеры</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fivth">Материалы</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Документы от клиента для оформления полиса</a>
+                            <a href="#">ОСАГО</a>
+                            <a href="#">Имущество ФЛ</a>
+                            <a href="#">Личная защита</a>
+                            <a href="#">Медицина</a>
+                            <a href="#">Юр.лица</a>
+                            <a href="#">Туристы</a>
+                            <a href="#">Методички</a>
+                            <a href="#">Книги</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="sixth">СПЕКТР</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+
+        <article class="vebinar container-xl" id="vebinar">
+            <div class="vebinar__menu">
+                <a href="#" class="vebinar__menu-item">Курсы и тренинги</a>
+                <a href="#" class="vebinar__menu-item active">Вебинары</a>
+                <a href="#" class="vebinar__menu-item">Единные информационные системы</a>
+            </div>
+            <h1 class="vebinar__title title">
+                <span>Вебинар «Урегулирование убытков».</span> Часть 1
+            </h1>
+            <p class="vebinar__date">
+                Дата вебинара: 02.02.2021
+            </p>
+            <p class="vebinar__master">
+                <span>Лектор:</span> Кудрявцева Тина Владимировна, заместитель начальника отдела по работе с клиентами, департамент выплат по имуществу в Санкт-Петербурге
+            </p>
+            <div class="vebinar__video youtube">
+                <a href='https://www.youtube.com/v/mGxdJv7FW1w?enablejsapi=1&theme=light&showinfo=0&vq=hd720&border=0&autoplay=1' target="_blank" class="vebinar__video-popup popupbox-video fancybox.iframe" rel="group">
+                    <img src="https://img.youtube.com/vi/mGxdJv7FW1w/sddefault.jpg">
+                </a>
+            </div>
+            <p class="vebinar__text">
+                Тема урегулирования убытков по авто всегда вызывала большой интерес, и собирала большое количество участников и вопросов в офлайн формате.
+            </p>
+            <p class="vebinar__text">
+                Материал будет полезен всем агентам, как начинающим, так и со стажем работы.
+            </p>
+        </article>
+        <article class="vebinar container-xl" id="vebinar">
+            <h1 class="vebinar__title title">
+                <span>Вебинар «Урегулирование убытков».</span> Часть 2
+            </h1>
+            <p class="vebinar__date">
+                Дата вебинара: 05.02.2021
+            </p>
+            <p class="vebinar__master">
+                <span>Лекторы:</span><br>
+                Ершова Любовь Васильевна, заместитель начальника отдела поддержки клиентов<br>
+                Кочуев Олег Анатольевич, генеральный директор НЭ «КАР ЭКС»<br>
+                Вильховченко Екатерина, главный специалист Правового управления РУ по СЗФО<br>
+
+            </p>
+            <div class="vebinar__video youtube">
+                <a href='https://www.youtube.com/v/CyFuyP9U_Mo?enablejsapi=1&theme=light&showinfo=0&vq=hd720&border=0&autoplay=1' target="_blank" class="vebinar__video-popup popupbox-video fancybox.iframe" rel="group">
+                    <img src="https://img.youtube.com/vi/CyFuyP9U_Mo/sddefault.jpg">
+                </a>
+            </div>
+            <p class="vebinar__text">
+                Материал будет полезен всем агентам, как начинающим, так и со стажем работы.
+            </p>
+        </article>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer container-fluid" id="footer">
+        <div class="container-xl">
+            <div class="footer__row row">
+                <div class="col-12 col-xl-5 d-flex flex-column flex-md-row flex-xl-column align-items-start justify-content-between">
+                    <a href="index.html" class="footer__name d-flex">
+                        <img src="img/resoschool_logo_white.svg" alt="Логотип белый">
+                        <p>Центр<br>
+                            профессиональной подготовки<br>
+                            САО «РЕСО-Гарантия»,<br>
+                            Санкт-Петербург
+                        </p>
+                    </a>
+                    <div class="footer__tagline">
+                        Лучшая школа<br>
+                        страхования в России!
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">О школе</a>
+                        <a class="footer__link" href="#">Команда</a>
+                        <a class="footer__link active" href="#">Расписание</a>
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">Экспресс-курс"</a>
+                        <a class="footer__link" href="#">Действующему агенту</a>
+                        <a class="footer__link" href="#">Руководителю</a>
+                        <a class="footer__link" href="#">Обучателю</a>
+                        <a class="footer__link" href="#">Материалы</a>
+                        <a class="footer__link" href="#">СПЕКТР</a>
+                    </div>
+                </div>
+                <div class="footer__contacts col-12 col-xl-4 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__address">
+                        195220, Санкт-Петебург,  пр. Непокоренных, д. 49А<br>
+                        Телефон: <a href="tel:78124496110">+7 (812) 449-61-10</a><br>
+                        E-mail: <a href="mailto:study@spb.reso.ru">study@spb.reso.ru</a>
+                    </div>
+                    <div class="footer__additional">
+                        <div class="footer__messangers">
+                            <a href="https://instagram.com/resodrive?utm_medium=site" class="footer__messanger">
+                                <img src="img/INST.svg" alt="Инстаграм">
+                            </a>
+                            <a href="https://www.facebook.com/groups/prazdnik.reso/?ref=share" class="footer__messanger">
+                                <img src="img/FB.svg" alt="Фейсбук">
+                            </a>
+                            <a href="https://vk.com/we_are_reso" class="footer__messanger">
+                                <img src="img/VK.svg" alt="ВКонтакте">
+                            </a>
+                            <a href="mailto:study@spb.reso.ru" class="footer__messanger">
+                                <img src="img/mail.svg" alt="Почта">
+                            </a>
+                        </div>
+                        <div class="footer__divider"></div>
+                        <div class="footer__copyright">
+                            © Школа РЕСО в Санкт-Петербурге, 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+    <script src="js/vebinar.js"></script>
+</body>
+</html>

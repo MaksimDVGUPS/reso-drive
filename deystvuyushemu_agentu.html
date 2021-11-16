@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-xxl">
+            <a class="navbar__logo col-auto" href="index.html">
+                <img src="img/resoschool_logo_green.svg" alt="Логотип зеленный">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar__collapse collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar__links navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="navbar__item" href="#">О школе</a>
+                    <a class="navbar__item" href="#">Команда</a>
+                    <a class="navbar__item active" href="#">Расписание</a>
+                    <a class="navbar__item" href="#">Контакты</a>
+                </div>
+                <a class="navbar__phone col-auto me-auto" href="tel:78124496110">+7 (812) 449-61-10</a>
+                <form class="navbar__search d-flex">
+                    <input type="text" placeholder="Поиск по сайту" class="col">
+                    <button type="submit" class="col-auto">
+                        <img src="img/loopa.svg" alt="Поиск по сайту">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main" id="main">
+        <!-- Меню -->
+        <menu class="menu container-xl" id="menu">
+            <div class="menu__padding"></div>
+            <div class="menu__limiter dragscroll">
+                <div class="menu__row">
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="first">Экспресс-курс</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2 active">
+                        <button class="menu__button" id="second">Действующему агенту</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="third">Руководителю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fourth">Обучателю</button>
+                        <div class="menu__dropdown">
+                            <a href="#">УМК</a>
+                            <a href="#">Менеджеры</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="fivth">Материалы</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Документы от клиента для оформления полиса</a>
+                            <a href="#">ОСАГО</a>
+                            <a href="#">Имущество ФЛ</a>
+                            <a href="#">Личная защита</a>
+                            <a href="#">Медицина</a>
+                            <a href="#">Юр.лица</a>
+                            <a href="#">Туристы</a>
+                            <a href="#">Методички</a>
+                            <a href="#">Книги</a>
+                        </div>
+                    </div>
+                    <div class="menu__item col-2">
+                        <button class="menu__button" id="sixth">СПЕКТР</button>
+                        <div class="menu__dropdown">
+                            <a href="#">Первый</a>
+                            <a href="#">Второй</a>
+                            <a href="#">Третий</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+
+        <!-- Действующему агенту -->
+        <section class="agent container-xl" id="agent">
+            <h1 class="agent__title title">
+                Действующему агенту
+            </h1>
+            <p class="agent__about">
+                Вы действующий агент. В этом разделе представлены обучающие мероприятия в видео формате.
+                Выбирайте, записывайтесь!
+            </p>
+            <div class="agent__items">
+                <div class="agent__item">
+                    <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    <div class="agent__footer">
+                        <h2 class="agent__name">
+                            Курсы и тренинги
+                        </h2>
+                        <p class="agent__description">
+                            Знакомьтесь с основными курсами 
+                            Школы РЕСО и выбрайте 
+                            подходящее обучение.
+                        </p>
+                    </div>
+                    <div class="agent__dropdown">
+                        <a href="#">Введение в профессию</a>
+                        <a href="#">Как стать активным агентом</a>
+                        <a href="#">Мастерство публичного выступления</a>
+                        <a href="#">Из агента в менеджеры</a>
+                        <a href="#">Страхование имущества физических лиц</a>
+                        <a href="#">Страхование имущества юридических лиц</a>
+                        <a href="#">Страхование НС «ОтЛичное страхование»</a>
+                        <a href="#">Доктор РЕСО</a>
+                        <a href="#">Здоровье без границ</a>
+                        <a href="#">Страхование автотранспорта</a>
+                        <a href="#">ОСАГО. Как продать дорого? </a>
+                        <a href="#">Фокус-группа «Холодные звонки»</a>
+                        <a href="#">Фокус-группа «Работа в СНТ» </a>
+                        <a href="#">Фокус-группа «Теплая» по работе юридическими лицами</a>
+                        <a href="#">Фокус-группа «Секреты мессенджеров»</a>
+                        <a href="#">Фокус-группа «Кустовые клиенты»</a>
+                        <a href="#">Фокус-группа «Страховой агент в режиме Instagram»</a>
+                        <a href="#">Тренинг «Критические заболевания» </a>
+                        <a href="#">Тренинг «РЕСО-Надежда»</a>
+                        <a href="#">Тренинг «Телемедицина»</a>
+                        <a href="#">Тренинг «Ипотека»</a>
+                        <a href="#">Тренинг «Поиск и развитие клиентской базы»</a>
+                        <a href="#">Практический интенсив «Страховой агент под ключ»</a>
+                        <a href="#">Курс тренингов «Как правильно предложить клиентам новый страховой продукт. Типология клиентов»</a>
+                        <a href="#">Школа модераторов мобильного тренинга</a>
+                        <a href="#">Мобильный тренинг «Телемедицина»</a>
+                        <a href="#">Мобильный тренинг «Каско-Профи»</a>
+                        <a href="#">Мобильный тренинг «Обратная связь»</a>
+                        <a href="#">Мобильный тренинг «НС: «Подорожник» и «Активная защита» </a>
+                        <a href="#">Мобильный тренинг  «Накопительное страхование жизни»</a>
+                    </div>
+                </div>
+                <div class="agent__item">
+                    <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    <div class="agent__footer">
+                        <h2 class="agent__name">
+                            Вебинары
+                        </h2>
+                        <p class="agent__description">
+                            Записи продуктовых и непродуктовых лекций.
+                        </p>
+                    </div>
+                    <div class="agent__dropdown">
+                        <a href="#">Страхование грузов</a>
+                        <a href="#">Урегулирование убытков</a>
+                        <a href="#">Страхование ответственности</a>
+                        <a href="#">РЕСО Офис, РЕСО-ПРЕДПРИНИМАТЕЛЬ, РЕСО-СМБ</a>
+                        <a href="#">Работа с тендерами</a>
+                        <a href="#">Страхование стройтехники и СМР</a>
+                        <a href="#">Поиск клиентов</a>
+                        <a href="#">Критические заболевания</a>
+                        <a href="#">Рекрутинг в соцсетях. Часть 1: «Создаем аватар»</a>
+                        <a href="#">Рекрутинг в соцсетях. Часть 2: «Работа есть? Работа есть!»</a>
+                    </div>
+                </div>
+                <div class="agent__item">
+                    <img src="img/deystv_agent.jpg" alt="Курсы и тренинги" class="agent__img">
+                    <div class="agent__footer">
+                        <h2 class="agent__name">
+                            ЕИС
+                        </h2>
+                        <p class="agent__description">
+                            Обучающая информация по единым информационным системам: Ресо Офис и Citrix.
+                        </p>
+                    </div>
+                    <div class="agent__dropdown">
+                        <a href="#">РЕСО Офис</a>
+                        <a href="#">Citrix</a>
+                        <a href="#">Учебный портал РЕСО</a>
+                        <a href="#">Мобильное приложение «РЕСО Мобайл»</a>
+                        <a href="#">Мобильное приложение  «RESO-Code»</a>
+                        <a href="#">Сервис «Агент рядом»</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer container-fluid" id="footer">
+        <div class="container-xl">
+            <div class="footer__row row">
+                <div class="col-12 col-xl-5 d-flex flex-column flex-md-row flex-xl-column align-items-start justify-content-between">
+                    <a href="index.html" class="footer__name d-flex">
+                        <img src="img/resoschool_logo_white.svg" alt="Логотип белый">
+                        <p>Центр<br>
+                            профессиональной подготовки<br>
+                            САО «РЕСО-Гарантия»,<br>
+                            Санкт-Петербург
+                        </p>
+                    </a>
+                    <div class="footer__tagline">
+                        Лучшая школа<br>
+                        страхования в России!
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">О школе</a>
+                        <a class="footer__link" href="#">Команда</a>
+                        <a class="footer__link active" href="#">Расписание</a>
+                    </div>
+                    <div class="footer__links">
+                        <a class="footer__link" href="#">Экспресс-курс"</a>
+                        <a class="footer__link" href="#">Действующему агенту</a>
+                        <a class="footer__link" href="#">Руководителю</a>
+                        <a class="footer__link" href="#">Обучателю</a>
+                        <a class="footer__link" href="#">Материалы</a>
+                        <a class="footer__link" href="#">СПЕКТР</a>
+                    </div>
+                </div>
+                <div class="footer__contacts col-12 col-xl-4 d-flex flex-column align-items-start justify-content-between">
+                    <div class="footer__address">
+                        195220, Санкт-Петебург,  пр. Непокоренных, д. 49А<br>
+                        Телефон: <a href="tel:78124496110">+7 (812) 449-61-10</a><br>
+                        E-mail: <a href="mailto:study@spb.reso.ru">study@spb.reso.ru</a>
+                    </div>
+                    <div class="footer__additional">
+                        <div class="footer__messangers">
+                            <a href="https://instagram.com/resodrive?utm_medium=site" class="footer__messanger">
+                                <img src="img/INST.svg" alt="Инстаграм">
+                            </a>
+                            <a href="https://www.facebook.com/groups/prazdnik.reso/?ref=share" class="footer__messanger">
+                                <img src="img/FB.svg" alt="Фейсбук">
+                            </a>
+                            <a href="https://vk.com/we_are_reso" class="footer__messanger">
+                                <img src="img/VK.svg" alt="ВКонтакте">
+                            </a>
+                            <a href="mailto:study@spb.reso.ru" class="footer__messanger">
+                                <img src="img/mail.svg" alt="Почта">
+                            </a>
+                        </div>
+                        <div class="footer__divider"></div>
+                        <div class="footer__copyright">
+                            © Школа РЕСО в Санкт-Петербурге, 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <script src="js/deystvuyushemu_agentu.js"></script>
+</body>
+</html>
